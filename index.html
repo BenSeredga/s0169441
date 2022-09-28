@@ -1,12 +1,12 @@
 <head>
-    <title>Zad2</title>
+    <title>Zad3</title>
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
     
   <body>
     <header class="block_style_1">
       <img class="img_style_1" src="https://www.snakeriveranimalshelter.org/wp-content/uploads/example-logo.jpg" alt="типа лого">
-      <div Class ="block_style_2"><h1>Название сайта</h1></div>
+      <div Class ="block_style_2"><h1 Class="sitename_style">Название сайта</h1></div>
     </header>
     
     <nav class = "nav_style_1">
@@ -18,8 +18,8 @@
     </nav>
 
   <div class="content_style"> 
-  <h1 class="h1_center">Список</h1>  
-   <ol>     
+  <h1 class="h1_center" id="contentlist">Список</h1>  
+   <ol class="spisok">     
       <li><a href="example.com">example</a></li>
       <li><a href="http://www.example.com">example https</a></li>
       <li><a href="ftp://ftp.example.com/file.bin">ftp no auth</a></li>
@@ -60,7 +60,7 @@
       <li><a href="/page">сокращенная на внутр</a></li>
     </ol>
       
-      <h1 class="h1_center">Таблица</h1>
+      <h1 class="h1_center" id="contenttable">Таблица</h1>
       <table class = "table_style_1">
         <tbody class = "tbody_style_1"><tr>
           <th>Колонка 1</th>
@@ -103,7 +103,7 @@
         </tr>
       </tbody></table>
 
-      <h1 class="h1_center">Форма</h1>
+      <h1 class="h1_center" id="contentform">Форма</h1>
       <form action="#" class="form_style_1">
         <p>
           <label for="name">Имя</label><br>
