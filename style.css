@@ -35,7 +35,7 @@ div.content_style {
       margin: 0 auto; 
       margin-top:20px; 
       padding:10px;
-      font-size: 26px;
+      font-size: 30px;
 }
 ol.spisok{
       order: 2;
@@ -51,10 +51,11 @@ ol.spisok{
 }
 
 footer.block_style_4 {
-      width:95%; 
+      width:94.8%; 
       background-color:#ccc; 
       margin-top:50px; 
       padding:50px;
+      font-size: 26px;
 }
 span.span_style_1 {
       background-color:white;
@@ -111,7 +112,7 @@ div.content_style ol, table{
       width: 20em;
 }
 
-@media screen and (min-width: 8000px){
+@media screen and (min-width: 1081px){
       div.content_style {
             max-width:960px; 
             background-color:#ccc; 
@@ -140,5 +141,29 @@ div.content_style ol, table{
             border-collapse: collapse;
             font-size: 16px;
       }
+      ol.spisok{
+      order: 2;
+      }
+      #contentlist{
+            order: 1;
+      }
+      #contenttable{
+      order: 3;
+      }
+      table.table_style_1 {
+      border-collapse: collapse;
+      border: 2px solid black;
+      order: 4;
+      }
+      #contentform{
+            order: 5;
+      }
+      .form_style_1{
+            order: 6;
+      }
+      .block_style_4{
+            font-size: 12px;
+      }
+
 
 }
