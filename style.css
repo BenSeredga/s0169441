@@ -79,3 +79,35 @@ div.content_style ol, table{
       margin-left: auto; 
       width: 20em;
 }
+
+@media screen and (min-width: 800px){
+      div.content_style {
+            max-width:960px; 
+            background-color:#ccc; 
+            margin: 0 auto; 
+            margin-top:20px; 
+            padding:10px;
+            font-size: 16px;
+      }
+      nav.nav_style_1{
+            max-width:960px; 
+            background-color:#ccc; 
+            margin: 0 auto; 
+            margin-top:20px; 
+            padding:10px; 
+            text-align: center;
+            font-size: 16px;
+      }
+      form.form_style_1 p {
+            margin-right: auto; 
+            margin-left: auto; 
+            width: 10em;
+            font-size: 16px;
+      }
+      tbody.tbody_style_1 tr,td,th {
+            border: 2px solid black; 
+            border-collapse: collapse;
+            font-size: 16px;
+      }
+
+}
