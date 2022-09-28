@@ -94,11 +94,12 @@ form.form_style_1 p {
       margin-right: auto; 
       margin-left: auto; 
       width: 20em;
-      font-size: 22px;
+      font-size: 30px;
 
 }
 .form_style_1{
       order: 4;
+      font-size: 30px;
 }
 div.content_style h1{
       margin-right: auto; 
@@ -111,7 +112,12 @@ div.content_style ol, table{
       margin-left: auto; 
       width: 20em;
 }
-
+#superpowers_label{
+      font-size: 30px;
+}
+#sp_option{
+      font-size: 22px;
+}
 @media screen and (min-width: 1081px){
       div.content_style {
             max-width:960px; 
@@ -164,6 +170,10 @@ div.content_style ol, table{
       .block_style_4{
             font-size: 12px;
       }
-
-
+      #superpowers_label{
+            font-size: 14px;
+      }
+      #sp_option{
+            font-size: 12px;
+      }
 }
