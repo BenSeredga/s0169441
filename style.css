@@ -2,14 +2,24 @@ body {
       margin:0;
 }
 header.block_style_1 {
+      display: flex;
+      justify-content: space-evenly;
       width:100%;
       background-color:#ccc;
       padding: 10px;
       height:120px;
 }
 div.block_style_2 {
+      width: 90%;
+      height: 90px;
       background-color:#ddd; 
-      padding:10px;
+      padding-bottom:10px;
+      margin-left: 10px;
+      font-size: 26px;
+
+}
+h1.sitename_style{
+      margin-bottom: 20px;
 }
 img.img_style_1 {
       float:left; 
@@ -18,6 +28,8 @@ img.img_style_1 {
       height:100px;
 }
 div.content_style {
+      display: flex;
+      flex-direction: column;
       width:100%; 
       background-color:#ccc; 
       margin: 0 auto; 
@@ -25,6 +37,19 @@ div.content_style {
       padding:10px;
       font-size: 26px;
 }
+ol.spisok{
+      order: 2;
+}
+#contentlist{
+      order: 1;
+}
+#contentform{
+      order: 3;
+}
+#contenttable{
+      order: 5;
+}
+
 footer.block_style_4 {
       width:95%; 
       background-color:#ccc; 
@@ -62,17 +87,23 @@ tbody.tbody_style_1 tr,td,th {
 table.table_style_1 {
       border-collapse: collapse;
       border: 2px solid black;
+      order: 6;
 }
 form.form_style_1 p {
       margin-right: auto; 
       margin-left: auto; 
       width: 20em;
       font-size: 22px;
+
+}
+.form_style_1{
+      order: 4;
 }
 div.content_style h1{
       margin-right: auto; 
       margin-left: auto; 
       width: 5em;
+
 }
 div.content_style ol, table{
       margin-right: auto; 
@@ -80,7 +111,7 @@ div.content_style ol, table{
       width: 20em;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 8000px){
       div.content_style {
             max-width:960px; 
             background-color:#ccc; 
