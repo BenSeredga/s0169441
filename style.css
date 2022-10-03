@@ -27,7 +27,8 @@ img.img_style_1 {
       width:200px; 
       height:100px;
 }
-div.content_style {
+div.content_style main{
+      order: 2;
       display: flex;
       flex-direction: column;
       width:100%; 
@@ -37,6 +38,35 @@ div.content_style {
       padding:10px;
       font-size: 30px;
 }
+
+div.content_style {
+      display: flex;
+      flex-direction: column;
+}
+
+div.content_style aside1{
+      height: 160px;
+      width:102%;
+      background-color:#ccc;
+      order: 1;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 30px;
+      text-align: center;
+
+}
+
+div.content_style aside2{
+      width:102%;
+      height: 160px;
+      font-size: 30px;
+      text-align: center;
+      background-color:#ccc;
+      order: 3;
+      margin-top: 40px;
+      
+}
+
 ol.spisok{
       order: 2;
 }
@@ -51,7 +81,7 @@ ol.spisok{
 }
 
 footer.block_style_4 {
-      width:94.8%; 
+      width:92%; 
       background-color:#ccc; 
       margin-top:50px; 
       padding:50px;
@@ -119,7 +149,15 @@ div.content_style ol, table{
       font-size: 22px;
 }
 @media screen and (min-width: 1081px){
-      div.content_style {
+
+      div.content_style{
+            display: flex;
+            flex-direction: row;
+      }
+
+      div.content_style main{
+            flex: 3;
+            order: 2;
             max-width:960px; 
             background-color:#ccc; 
             margin: 0 auto; 
@@ -127,8 +165,31 @@ div.content_style ol, table{
             padding:10px;
             font-size: 16px;
       }
+
+      div.content_style aside1{
+            height: auto;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 0px;
+            flex: 1;
+            order: 1;
+      }
+
+      div.content_style aside2{
+            height: auto;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 0px;
+            flex: 1;
+            order: 3;
+      }
+
+
+
       nav.nav_style_1{
-            max-width:960px; 
+            width:100%; 
             background-color:#ccc; 
             margin: 0 auto; 
             margin-top:20px; 
@@ -161,6 +222,15 @@ div.content_style ol, table{
       border: 2px solid black;
       order: 4;
       }
+
+      footer.block_style_4 {
+      width:94.8%; 
+      background-color:#ccc; 
+      margin-top:50px; 
+      padding:50px;
+      font-size: 26px;
+      }
+
       #contentform{
             order: 5;
       }
