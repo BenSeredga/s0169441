@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style="min-width:400px; overflow-x:auto;">
 <head>
   <title>Zad4</title>
   <!--link rel="stylesheet" href="style.css" type="text/css"-->
@@ -207,6 +207,20 @@
           <input class="btn btn-success col-6" type="submit" value="Отправить">
         </div>
       </form>
+
+      <div class="container-fluid d-flex col-5 mt-3 flex-column order-5">
+        <h2>Калькулятор</h2>
+        <input type = "text" class="form-control mt-3 mb-2" placeholder="Цена товара"  id = "tprice">
+        <input type = "text" class="form-control mb-3" placeholder="Количество товара" id = "tcount">
+        <button onclick="multiply()" id="counting_btn">Посчитать</button>
+        <hr>
+        <label for="outcost">Стоимость:</label>
+        <p id="outcost" class="form-control"></p>
+        
+
+      </div>
+
+
     </main>
     <aside2 class="container-fluid order-3 col-lg-2 mt-3 ms-lg-3 mt-lg-0 mb-lg-0 bg-secondary">sidebar2</aside2>
   </div>   
@@ -222,6 +236,8 @@
 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7 /js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="script.js" defer></script>
 
   </body> 
 </html>
