@@ -149,6 +149,8 @@ div.content_style ol, table{
       font-size: 22px;
 }
 @media screen and (min-width: 1081px){
+      body{
+      }
 
       div.content_style{
             display: flex;
@@ -243,7 +245,5 @@ div.content_style ol, table{
       #superpowers_label{
             font-size: 14px;
       }
-      #sp_option{
-            font-size: 12px;
-      }
+      
 }
