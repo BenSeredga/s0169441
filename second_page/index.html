@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" style="min-width:400px; overflow-x:auto;">
+<html lang="ru" style="min-width:700px; overflow-x:auto;">
 <head>
   <title>Calculating page</title>
   <!--link rel="stylesheet" href="style.css" type="text/css"-->
@@ -25,7 +25,7 @@
               <a href="https://benseredga.github.io/s0169441" class="btn nav-link btn-outline-light">Homepage</a>
             </li>
             <li class="nav-item">
-              <a class="btn nav-link btn-light ms-1" href="https://benseredga.github.io/s0169441/secondpage">Calculating Page</a>
+              <a class="btn nav-link btn-light ms-1" href="https://benseredga.github.io/s0169441/second_page">Calculating Page</a>
             </li>
             <li class="nav-item">
               <a class="btn nav-link btn-outline-light ms-1" href="https://benseredga.github.io/s0169441/something_else">Something Else</a>
@@ -43,15 +43,54 @@
     <aside1 class=" container-fluid order-1 col-lg-2 me-lg-3 mb-3 mb-lg-0 bg-secondary">sidebar1</aside1>
     <main class="container-lg order-2 bg-secondary col d-flex flex-column" >
 
-      <div class="container-fluid d-flex col-5 mt-3 flex-column order-5">
+      <div class="container-fluid d-flex col-5 mt-3 flex-column mb-3">
         <h2>Калькулятор</h2>
-        <input type = "text" class="form-control mt-3 mb-2" placeholder="Цена товара"  id = "tprice">
-        <input type = "text" class="form-control mb-3" placeholder="Количество товара" id = "tcount">
-        <button onclick="multiply()" class="btn btn-outline-light" id="counting_btn">Посчитать</button>
-        <hr>
+        
+        
+        
+        
+        <select class="form-select mb-2" name= "tsel" id="ttype">
+          <option class="sel" data-name="none" value="0" selected>Выберите товар</option>
+          <option class="sel" data-name="ze" value="1">Золотой Ершик</option>
+          <option class="sel" data-name="akw" value="2">Аквариум</option>
+          <option class="sel" data-name="truba" value="3">Труба 100мм</option>
+        </select>
+
+
+
+        <div class="form-check form-switch ms-2" id="tpack">
+          <input class="form-check-input opti2" data-name="tp" type="checkbox" id="check1" >
+          <label class="form-check-label" for="tpack">Улучшеная упаковка (2000руб)</label>
+        </div>
+
+
+
+        <div class="container-fluid btn-group mb-3" role="group" id="eradios">
+
+          <input type="radio" class="btn-check opti1" data-name="wr" name="options" id="option1" value="r1" autocomplete="off">
+          <label class="btn btn-outline-light" for="option1">Белая ручка +1500</label>
+
+          <input type="radio" class="btn-check opti1" data-name="blr" name="options" value="r2" id="option2" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="option2">Синяя ручка</label>
+
+          <input type="radio" class="btn-check opti1" data-name="rr" value="r3" name="options" id="option3" autocomplete="off">
+          <label class="btn btn-outline-danger" for="option3">Красная ручка +3000</label>
+
+        </div>
+
+      
+
+
+
+        <input type = "text" class="form-control mb-3" placeholder="Количество товара" id = "tcount" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+
         <label for="outcost">Стоимость:</label>
         <p id="outcost" class="form-control"></p>
+        
+        <!--button onclick="multiply()" class="btn btn-outline-light" id="counting_btn">Посчитать</button-->
       </div>
+
+      
 
     </main>
     <aside2 class="container-fluid order-3 col-lg-2 mt-3 ms-lg-3 mt-lg-0 mb-lg-0 bg-secondary">sidebar2</aside2>
@@ -65,10 +104,10 @@
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script-->
 
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7 /js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7 /js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script-->
 
   <script src="js/script2.js" defer></script>
 
