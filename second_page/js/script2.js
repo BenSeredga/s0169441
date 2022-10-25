@@ -192,6 +192,8 @@ $(document).ready(function(){
     currentImage2 = $(".curry3");
     currentImage2.removeClass("curry3");
     currentImage2.removeClass("order-3");
+    currentImage2.removeClass("d-none");
+    currentImage2.removeClass("d-lg-block");
     currentImage2.addClass("order-2");
     currentImage2.addClass("curry2");
     currentImage3 = $(".curry4");
@@ -199,18 +201,24 @@ $(document).ready(function(){
     currentImage3.removeClass("order-4");
     currentImage3.addClass("order-3");
     currentImage3.addClass("curry3");
+    currentImage3.addClass("d-none");
+    currentImage3.addClass("d-lg-block");
 
 
 
     if(nextImageIndex === ($(".img:last").index()+1)){
       $(".img").eq(0).addClass("curry4");
       $(".img").eq(0).addClass("order-4");
-      $(".img").eq(0).removeClass("d-none");
+      $(".img").eq(0).addClass("d-none");
+      $(".img").eq(0).addClass("d-lg-block");
+      //$(".img").eq(0).removeClass("d-none");
     }
     else{
       nextImage.addClass("curry4");
       nextImage.addClass("order-4");
-      nextImage.removeClass("d-none");
+      nextImage.addClass("d-none");
+      nextImage.addClass("d-lg-block");
+      //nextImage.removeClass("d-none");
     }
   });
   $(".prev").click(function(){
@@ -228,6 +236,7 @@ $(document).ready(function(){
     currentImage4.removeClass("curry4");
     currentImage4.removeClass("order-4");
     currentImage4.addClass("d-none");
+    currentImage4.removeClass("d-lg-block");
     currentImage4 = $(".curry3");
     currentImage4.removeClass("curry3");
     currentImage4.removeClass("order-3");
@@ -239,16 +248,21 @@ $(document).ready(function(){
     currentImage3.removeClass("order-2");
     currentImage3.addClass("order-3");
     currentImage3.addClass("curry3");
+    currentImage3.addClass("d-none");
+    currentImage3.addClass("d-lg-block");
 
     currentImage2 = $(".curry1");
     currentImage2.removeClass("curry1");
     currentImage2.removeClass("order-1");
     currentImage2.addClass("order-2");
     currentImage2.addClass("curry2");
+    currentImage2.removeClass("d-none");
+    currentImage2.removeClass("d-lg-block");
 
     prevImage.addClass("curry1");
     prevImage.addClass("order-1");
     prevImage.removeClass("d-none");
+    prevImage.removeClass("d-lg-block");
 
 
   });
