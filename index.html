@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" style="min-width:400px; overflow-x:auto;">
 <head>
-  <title>Zad4</title>
+  <title>Homepage</title>
   <!--link rel="stylesheet" href="style.css" type="text/css"-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,14 +12,9 @@
 </head>
     
   <body>
-    <!--header class="block_style_1">
-      <img class="img_style_1" src="https://www.snakeriveranimalshelter.org/wp-content/uploads/example-logo.jpg" alt="типа лого">
-      <div Class ="block_style_2"><h1 Class="sitename_style">Название сайта</h1></div>
-    </header-->
-    
     <nav class = "navbar navbar-expand-lg navbar-light bg-secondary">
       <div class="container">
-        <a href="" class="navbar-brand d-flex flex-column text-center"><img class="navbar-brand" src="https://www.snakeriveranimalshelter.org/wp-content/uploads/example-logo.jpg" width="150px" alt="типа лого"></a>
+        <a href="" class="navbar-brand d-flex flex-column text-center"><img class="navbar-brand" src="https://www.snakeriveranimalshelter.org/wp-content/uploads/example-logo.jpg" width="150" alt="типа лого"></a>
         <button class= "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +31,7 @@
               <a class="btn nav-link btn-outline-light ms-1" href="https://benseredga.github.io/s0169441/something_else">Something Else</a>
             </li>
           </ul>
-          <form action="" class="d-flex">
+          <form action="#" class="d-flex">
             <input type="search" placeholder="Search" class="form-contol">
             <button class="btn btn-danger ms-1">Search</button>
           </form>
@@ -49,9 +44,8 @@
     <aside1 class=" container-fluid order-1 col-lg-2 me-lg-3 mb-3 mb-lg-0 bg-secondary">sidebar1</aside1>
     <main class="container-lg order-2 bg-secondary col d-flex flex-column" >
       <br>
+      <p class="text-center fw-bold fs-2">Список</p> 
       <ol class="order-1">
-        <h1 class="text-center">Список</h1>
-        <br>      
         <li><a href="example.com">example</a></li>
         <li><a href="http://www.example.com">example https</a></li>
         <li><a href="ftp://ftp.example.com/file.bin">ftp no auth</a></li>
@@ -92,7 +86,7 @@
         <li><a href="/page">сокращенная на внутр</a></li>
       </ol>
       
-      <h1 class="order-3 order-lg-2 text-center">Таблица</h1>
+      <p class="order-3 order-lg-2 text-center fw-bold fs-2">Таблица</p>
       <table class = "table table-light table-hover table-bordered table-striped order-4 order-lg-3">
         <thead class="table-dark">
             <tr>
@@ -141,51 +135,51 @@
 
       
       <form action="#" class="order-2 order-lg-5">
-        <h1 class="text-center">Форма</h1>
+        <p class="text-center fw-bold fs-2">Форма</p>
         <br>
 
         <div class="mb-3">
 
           <label for="nameinput" class="form-label">Ваше Имя</label>
-          <input type="nameinput" class="form-control" id="nameinput" placeholder="Иванов Иван Иванович">
+          <input type="text" class="form-control" id="nameinput" placeholder="Иванов Иван Иванович">
 
           <label for="emailinput" class="form-label">Электронная почта</label>
           <input type="email" class="form-control" id="emailinput" placeholder="name@example.com">
 
-          <label for="date" class="form-label">Дата Рождения</label>
-          <input type="date" class="form-control">
+          <label for="date1" class="form-label">Дата Рождения</label>
+          <input type="date" class="form-control" id="date1">
         </div>
         
         <p class="text-center">Пол</p>
 
         <div class="container-fluid btn-group mb-4 " role="group">
-          <input type="radio" class="btn-check" name="sex" id="sex1" autocomplete="off">
+          <input type="radio" class="btn-check" name="sex" id="sex1">
           <label class="btn btn-outline-light" for="sex1">Мужской</label>
 
-          <input type="radio" class="btn-check" name="sex" id="sex2" autocomplete="off">
+          <input type="radio" class="btn-check" name="sex" id="sex2" >
           <label class="btn btn-outline-light" for="sex2">Женский</label>
         </div>
 
         <p class="text-center">Количество конечностей</p>
         <div class="container-fluid btn-group mb-3" role="group">
 
-          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+          <input type="radio" class="btn-check" name="options" id="option1">
           <label class="btn btn-outline-light" for="option1">Одна</label>
 
-          <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+          <input type="radio" class="btn-check" name="options" id="option2" >
           <label class="btn btn-outline-light" for="option2">Две</label>
 
-          <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+          <input type="radio" class="btn-check" name="options" id="option3" >
           <label class="btn btn-outline-light" for="option3">Три</label>
 
-          <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+          <input type="radio" class="btn-check" name="options" id="option4" >
           <label class="btn btn-outline-light" for="option4">Четыре</label>
 
         </div>
 
         <div class="text-center">
           <label class="" for="superpowers" id="superpowers_label">Суперспособности</label><br>
-          <select class="form-select mb-3" name="superpowers[]" multiple = "multiple">
+          <select class="form-select mb-3" name="superpowers[]" multiple = "multiple" id="superpowers">
             
             <option value="immortality">Бессмертие</option>
             <option value="noclip">Прохождение сквозь стены</option>
@@ -200,7 +194,7 @@
         </div>
 
         <div class="text-center mb-5">
-          <input type="checkbox" class="btn-check" id="confirm" autocomplete="off">
+          <input type="checkbox" class="btn-check" id="confirm">
           <label class="btn btn-outline-light" for="confirm">С контрактом ознакомлен</label>
         </div>
         <div class="text-center mb-4">
@@ -209,33 +203,32 @@
       </form>
 
       <div class="container-fluid d-flex col-5 mt-3 flex-column order-5">
-        <h2>Калькулятор</h2>
+        <p class="fw-bold fs-2">Калькулятор</p>
         <input type = "text" class="form-control mt-3 mb-2" placeholder="Цена товара"  id = "tprice">
         <input type = "text" class="form-control mb-3" placeholder="Количество товара" id = "tcount">
         <button onclick="multiply()" class="btn btn-outline-light" id="counting_btn">Посчитать</button>
         <hr>
-        <label for="outcost">Стоимость:</label>
+        <label>Стоимость:</label>
         <p id="outcost" class="form-control"></p>
-        
-
       </div>
 
 
+      
     </main>
     <aside2 class="container-fluid order-3 col-lg-2 mt-3 ms-lg-3 mt-lg-0 mb-lg-0 bg-secondary">sidebar2</aside2>
   </div>   
   
   <footer class ="container-fluid bg-secondary mt-5 mh-100" style="height:160px;">
-    <span class="span_style_1"><h1>Подвал</h1></span>
+    <span class="fw-bold fs-2">Подвал</span>
   </footer>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script-->
 
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7 /js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7 /js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script-->
 
   <script src="script.js" defer></script>
 

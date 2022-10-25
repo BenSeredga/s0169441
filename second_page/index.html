@@ -2,7 +2,6 @@
 <html lang="ru" style="min-width:700px; overflow-x:auto;">
 <head>
   <title>Calculating page</title>
-  <!--link rel="stylesheet" href="style.css" type="text/css"-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +13,7 @@
 <body>
   <nav class = "navbar navbar-expand-lg navbar-light bg-secondary">
       <div class="container">
-        <a href="" class="navbar-brand d-flex flex-column text-center"><img class="navbar-brand" src="https://www.snakeriveranimalshelter.org/wp-content/uploads/example-logo.jpg" width="150px" alt="типа лого"></a>
+        <a href="" class="navbar-brand d-flex flex-column text-center"><img class="navbar-brand" src="https://www.snakeriveranimalshelter.org/wp-content/uploads/example-logo.jpg" width="150" alt="типа лого"></a>
         <button class= "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +30,7 @@
               <a class="btn nav-link btn-outline-light ms-1" href="https://benseredga.github.io/s0169441/something_else">Something Else</a>
             </li>
           </ul>
-          <form action="" class="d-flex">
+          <form action="#" class="d-flex">
             <input type="search" placeholder="Search" class="form-contol">
             <button class="btn btn-danger ms-1">Search</button>
           </form>
@@ -44,7 +43,7 @@
     <main class="container-lg order-2 bg-secondary col d-flex flex-column" >
 
       <div class="container-fluid d-flex col-5 mt-3 flex-column mb-3">
-        <h2>Калькулятор</h2>
+        <p class="fw-bold fs-2">Калькулятор</p>
         
         
         
@@ -60,20 +59,20 @@
 
         <div class="form-check form-switch ms-2" id="tpack">
           <input class="form-check-input opti2" data-name="tp" type="checkbox" id="check1" >
-          <label class="form-check-label" for="tpack">Улучшеная упаковка (2000руб)</label>
+          <label class="form-check-label" for="check1">Улучшеная упаковка (2000руб)</label>
         </div>
 
 
 
         <div class="container-fluid btn-group mb-3" role="group" id="eradios">
 
-          <input type="radio" class="btn-check opti1" data-name="wr" name="options" id="option1" value="r1" autocomplete="off">
+          <input type="radio" class="btn-check opti1" data-name="wr" name="options" id="option1" value="r1">
           <label class="btn btn-outline-light" for="option1">Белая ручка +1500</label>
 
-          <input type="radio" class="btn-check opti1" data-name="blr" name="options" value="r2" id="option2" autocomplete="off" checked>
+          <input type="radio" class="btn-check opti1" data-name="blr" name="options" value="r2" id="option2" checked>
           <label class="btn btn-outline-primary" for="option2">Синяя ручка</label>
 
-          <input type="radio" class="btn-check opti1" data-name="rr" value="r3" name="options" id="option3" autocomplete="off">
+          <input type="radio" class="btn-check opti1" data-name="rr" value="r3" name="options" id="option3">
           <label class="btn btn-outline-danger" for="option3">Красная ручка +3000</label>
 
         </div>
@@ -84,10 +83,34 @@
 
         <input type = "text" class="form-control mb-3" placeholder="Количество товара" id = "tcount" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
 
-        <label for="outcost">Стоимость:</label>
+        <label>Стоимость:</label>
         <p id="outcost" class="form-control"></p>
-        
-        <!--button onclick="multiply()" class="btn btn-outline-light" id="counting_btn">Посчитать</button-->
+      </div>
+
+
+      <p class="fw-bold fs-2 text-center mt-3">Слайдер</p>
+      <div class="container-fluid mt-3 mb-5 d-flex align-items-center">
+        <button type="button" class="prev n btn btn-primary h-15 me-1 mt-10">Prev</button>
+          <div class="slider w-100 d-flex ">
+            <img src="img/1.jpg" class="rounded float-start img curry1 order-1" alt="...">
+            <img src="img/2.jpg" class="rounded float-start img curry2 order-2" alt="...">
+            <img src="img/3.jpg" class="rounded float-start img curry3 order-3" alt="...">
+            <img src="img/4.jpg" class="rounded float-start img curry4 order-4" alt="...">
+            <img src="img/5.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/6.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/7.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/8.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/9.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/10.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/11.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/12.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/13.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/14.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/15.jpg" class="d-none rounded float-start img" alt="...">
+            <img src="img/16.jpg" class="d-none rounded float-start img" alt="...">
+          </div>
+        <button type="button" class="next n btn btn-primary h-15 ms-1">Next</button>
+        <!--div class="next n"><a href="#">Next</a></div-->
       </div>
 
       
@@ -97,7 +120,7 @@
   </div>   
 
   <footer class ="container-fluid bg-secondary mt-5 mh-100" style="height:160px;">
-    <span class="span_style_1"><h1>Подвал</h1></span>
+    <span class="span_style_1">Подвал</span>
   </footer>
 
 
@@ -108,7 +131,7 @@
 
 
   <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7 /js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script-->
-
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="js/script2.js" defer></script>
 
 </body>

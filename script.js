@@ -1,3 +1,4 @@
+
 function multiply(){
 	alert("Посчитать?");
 	var num1, num2, result;
@@ -17,3 +18,5 @@ window.addEventListener('DOMContentLoaded', function (event) {
   let b = document.getElementById("counting_btn");
   //b.addEventListener("Посчитать", multiply);
 });
+
+
